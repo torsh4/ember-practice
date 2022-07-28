@@ -1,0 +1,36 @@
+
+.dates-component {
+  max-width: calc(100vw - 40px);
+  align-self: center;
+  display: flex;
+  justify-content: center;
+}
+
+.dates-container {
+  width: 100%;
+  overflow-x: scroll;
+  display: flex;
+}
+
+.dates-container::-webkit-scrollbar {
+  width: 3px;
+}
+
+.dates-container .day {
+  border: black 1px solid;
+  border-radius: 10px;
+  min-width: 150px;
+  width: 250px;
+  height: 300px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 8px 0px #88888859;
+}
+
+.day .description{
+  overflow: hidden;
+}

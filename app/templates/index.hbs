@@ -1,0 +1,13 @@
+{{page-title "Index"}}
+<main>
+  <h1>Weather</h1>
+  <div class="main-container">
+    <LocationSearch @submitLocation={{this.submitLocation}}/>
+    {{#if this.location}}
+      <Dates @dailyForecasts={{this.dailyForecasts}}/>
+    {{else}}
+      <div>Type A City Code And Submit</div>
+      {{/if}}
+  </div>
+</main>
+{{outlet}}

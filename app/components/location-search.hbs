@@ -1,0 +1,11 @@
+<div class="location-search-container">
+  <label>Weather In City: </label>
+  <input
+    data-test-input
+    type="number"
+    value={{this.inputValue}}
+    {{on "change" this.setInputValue}}
+  />
+  <button type="button" {{on "click" (fn @submitLocation this.inputValue)}}>Submit</button>
+</div>
+{{yield}}

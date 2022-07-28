@@ -6,6 +6,7 @@ module.exports = function (environment) {
     environment,
     rootURL: '/',
     locationType: 'history',
+    accu_api_key: 'RtAGQHNWUpxJjFMkWxGeVpMrfTCrs7Jc',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

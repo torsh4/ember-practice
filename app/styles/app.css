@@ -1,0 +1,21 @@
+@import './location-search.css';
+@import './dates.css';
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+}
+
+.main-container * {
+  margin-bottom: 20px;
+}
