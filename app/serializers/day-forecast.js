@@ -9,7 +9,7 @@ export default class DayForecastSerializer extends JSONAPISerializer {
           id: dailyForecast.Date,
           type: 'day-forecast',
           attributes: {
-            date: dateFormat([dailyForecast.Date]),
+            date: dateFormat(dailyForecast.Date),
             iconNumber: dailyForecast.Day.Icon,
             maxTemp: dailyForecast.Temperature.Maximum.Value,
             minTemp: dailyForecast.Temperature.Minimum.Value,

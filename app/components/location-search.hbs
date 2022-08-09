@@ -6,6 +6,6 @@
     value={{this.inputValue}}
     {{on "change" this.setInputValue}}
   />
-  <button type="button" {{on "click" (fn @submitLocation this.inputValue)}}>Submit</button>
+  <button data-test-button type="button" {{on "click" (fn @submitLocation this.inputValue)}}>Submit</button>
 </div>
 {{yield}}
