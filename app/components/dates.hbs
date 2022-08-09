@@ -2,12 +2,13 @@
 <div class="dates-component">
   <div class="dates-container">
   {{#each @dailyForecasts as |dayForecast|}}
-    <div class="day" data-test-day>
-      <div class="date" data-test-date>{{dayForecast.date}}</div>
-      <div class="icon">{{inline-svg (concat "/assets/icons/" dayForecast.iconNumber)}}</div>
-      <div class="temp" data-test-temp>{{dayForecast.minTemp}}-{{dayForecast.maxTemp}}</div>
-      <div class="description" data-test-description><span>{{dayForecast.description}}</span></div>
-    </div>
+    <Day
+      @date={{dayForecast.date}}
+      @iconNumber={{dayForecast.iconNumber}}
+      @maxTemp={{dayForecast.maxTemp}}
+      @minTemp={{dayForecast.minTemp}}
+      @description={{dayForecast.description}}
+    />
   {{/each}}
   </div>
 

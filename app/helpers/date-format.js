@@ -1,10 +1,9 @@
 import { helper } from '@ember/component/helper';
-import moment from "moment";
+import {dateFormat} from "../lib/date-format";
 
-export function dateFormat(args) {
+export function dateFormatHelper(args) {
   const [date] = args;
-  console.log({date});
-  return moment(date).format('D.M.YY');
+  return dateFormat(date);
 }
 
-export default helper(dateFormat);
+export default helper(dateFormatHelper);

@@ -1,6 +1,5 @@
 import JSONAPISerializer from '@ember-data/serializer/json-api';
-import moment from 'moment';
-import { dateFormat } from '../helpers/date-format';
+import {dateFormat} from "../lib/date-format";
 
 export default class DayForecastSerializer extends JSONAPISerializer {
   normalizeResponse(store, primaryModelClass, payload, id, requestType) {
